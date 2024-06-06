@@ -3,7 +3,7 @@
 
 ## Đây là một tài liệu sống và những ý tưởng để nâng cao chất lượng code xung quanh chúng ta đều được chào mừng. Đóng góp: fork, clone, branch, commit, push, pull request.
 
-* Rick Waldron [@rwaldron](http://twitter.com/rwaldron), [github](https://github.com/rwldrn)
+* Rick Waldron [@rwaldron](http://twitter.com/rwaldron), [github](https://github.com/rwaldron)
 * Mathias Bynens [@mathias](http://twitter.com/mathias), [github](https://github.com/mathiasbynens)
 * Schalk Neethling [@ossreleasefeed](http://twitter.com/ossreleasefeed), [github](https://github.com/ossreleasefeed/)
 * Kit Cambridge  [@kitcambridge](http://twitter.com/kitcambridge), [github](https://github.com/kitcambridge)
@@ -32,7 +32,9 @@
 * Aleksandr Filatov [@greybax] (http://twitter.com/greybax), [github](https://github.com/greybax)
 * Duc Nguyen [@ducntq](https://twitter.com/ducntq), [github](https://github.com/ducntq)
 * James Young [@jamsyoung](http://twitter.com/jamsyoung), [github](https://github.com/jamsyoung)
-
+* Stephane Moreau [github](https://github.com/stmoreau)  
+* Boris Nekezov [github](https://github.com/boris-nekezov)
+* Akshat Joshi [@akshat_joshi](http://twitter.com/akshat_joshi), [github](https://https://github.com/akshatjoshii)
 
 
 ## Tất cả code trong bộ mã nguồn nên nhìn giống như một người viết ra, cho dù có bao nhiêu người đóng góp.
@@ -53,6 +55,8 @@
 
 ## Bản dịch
 
+* [ORIGINAL](https://github.com/rwldrn/idiomatic.js/)
+* [Bulgarian](https://github.com/rwldrn/idiomatic.js/tree/master/translations/bg_BG)
 * [German](https://github.com/rwldrn/idiomatic.js/tree/master/translations/de_DE)
 * [French](https://github.com/rwldrn/idiomatic.js/tree/master/translations/fr_FR)
 * [Spanish](https://github.com/rwldrn/idiomatic.js/tree/master/translations/es_ES)
@@ -66,6 +70,8 @@
 * [Serbian - cyrilic alphabet](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ср_СР)
 * [Serbian - latin aplphabet](https://github.com/rwldrn/idiomatic.js/tree/master/translations/sr_SR)
 * [Tiếng Việt](https://github.com/rwldrn/idiomatic.js/tree/master/translations/vi_VN)
+* [Greek](https://github.com/rwaldron/idiomatic.js/tree/master/translations/gr_GR)
+* [Hindi](https://github.com/rwaldron/idiomatic.js/tree/master/translations/hi_HI)   
 
 
 ## Quan trọng, những thành phần không nhất quán
@@ -1282,9 +1288,7 @@ Nguyên tắc cơ bản:
 
 #### “Everything is Permitted: Extending Built-ins” (Tất cả đều cho phép: Mở rộng thành phần dựng sẵn) viết bởi Andrew Dupont (JSConf2011, Portland, Oregon)
 
-<iframe src="http://blip.tv/play/g_Mngr6LegI.html" width="480" height="346" frameborder="0" allowfullscreen></iframe><embed type="application/x-shockwave-flash" src="http://a.blip.tv/api.swf#g_Mngr6LegI" style="display:none"></embed>
-
-http://blip.tv/jsconf/jsconf2011-andrew-dupont-everything-is-permitted-extending-built-ins-5211542
+https://www.youtube.com/watch?v=xL3xCO7CLNM
 
 
 9. <a name="comments">Chú thích</a>

@@ -3,7 +3,7 @@
 
 ## Ovo je "živ" dokument i nove ideje za unapređenje koda oko nas su uvek dobrodošle. Doprinesite:  fork, clone, branch, commit, push, pull request.
 
-* Rick Waldron [@rwaldron](http://twitter.com/rwaldron), [github](https://github.com/rwldrn)
+* Rick Waldron [@rwaldron](http://twitter.com/rwaldron), [github](https://github.com/rwaldron)
 * Mathias Bynens [@mathias](http://twitter.com/mathias), [github](https://github.com/mathiasbynens)
 * Schalk Neethling [@ossreleasefeed](http://twitter.com/ossreleasefeed), [github](https://github.com/ossreleasefeed/)
 * Kit Cambridge  [@kitcambridge](http://twitter.com/kitcambridge), [github](https://github.com/kitcambridge)
@@ -26,6 +26,9 @@
 * Miloš Gavrilović [@gavrisimo](http://twitter.com/gavrisimo), [github](https://github.com/gavrisimo)
 * Duc Nguyen [@ducntq](https://twitter.com/ducntq), [github](https://github.com/ducntq)
 * James Young [@jamsyoung](http://twitter.com/jamsyoung), [github](https://github.com/jamsyoung)
+* Stephane Moreau [github](https://github.com/stmoreau)  
+* Boris Nekezov [github](https://github.com/boris-nekezov)
+* Akshat Joshi [@akshat_joshi](http://twitter.com/akshat_joshi), [github](https://https://github.com/akshatjoshii) 
 
 
 ## Sav kod u bilo kojoj "bazi koda" trebalo bi da izgleda kao da ga je napisala jedna osoba, bez obzira koliko je ljudi doprinelo njegovom kreiranju.
@@ -40,13 +43,14 @@
 
 &nbsp;
 
-> ### "Deo uloge dobrog upravnika uspešnog projekta je i u razumevanju da pisanje koda po svojim merilima je loša ideja™. Ako hiljade ljudi koristi tvoj kod, onda piši najjasniji kod, a ne preva svojim ličnim preferencijama ili da sa željom da ispadneš pametan u okvirima specifikacije."
+> ### "Deo uloge dobrog upravnika uspešnog projekta je i u razumevanju da pisanje koda po svojim merilima je loša ideja™. Ako hiljade ljudi koristi tvoj kod, onda piši najjasniji kod, a ne prema svojim ličnim preferencijama ili da sa željom da ispadneš pametan u okvirima specifikacije."
 >_Idan_ _Gazit_
 
 
 ## Translations
 
 * [ORIGINAL](https://github.com/rwldrn/idiomatic.js/)
+* [Bulgarian](https://github.com/rwldrn/idiomatic.js/tree/master/translations/bg_BG)
 * [German](https://github.com/rwldrn/idiomatic.js/tree/master/translations/de_DE)
 * [French](https://github.com/rwldrn/idiomatic.js/tree/master/translations/fr_FR)
 * [Spanish](https://github.com/rwldrn/idiomatic.js/tree/master/translations/es_ES)
@@ -59,6 +63,8 @@
 * [简体中文](https://github.com/rwldrn/idiomatic.js/tree/master/translations/zh_CN)
 * [Serbian - cyrilic alphabet](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ср_СР)
 * [Serbian - latin aplphabet](https://github.com/rwldrn/idiomatic.js/tree/master/translations/sr_SR)
+* [Greek](https://github.com/rwaldron/idiomatic.js/tree/master/translations/gr_GR)
+* [Hindi](https://github.com/rwaldron/idiomatic.js/tree/master/translations/hi_HI)  
 
 
 ## Važne, ne idiomatske stvari:
@@ -1252,9 +1258,7 @@ Sledeće sekcije ocrtavaju _razuma_ vodič za stil modernog JavaScript razvoja i
 
     #### “Everything is Permitted: Extending Built-ins” by Andrew Dupont (JSConf2011, Portland, Oregon)
 
-    <iframe src="http://blip.tv/play/g_Mngr6LegI.html" width="480" height="346" frameborder="0" allowfullscreen></iframe><embed type="application/x-shockwave-flash" src="http://a.blip.tv/api.swf#g_Mngr6LegI" style="display:none"></embed>
-
-    http://blip.tv/jsconf/jsconf2011-andrew-dupont-everything-is-permitted-extending-built-ins-5211542
+    https://www.youtube.com/watch?v=xL3xCO7CLNM
 
 
 9. <a name="comments">Komentari</a>

@@ -3,7 +3,7 @@
 
 ## Acesta este un document în continuă dezvoltare și noi idei pentru îmbunătățirea codului pe care-l scriem sunt întotdeauna binevenite. Contribuie și tu: fork, clone, branch, commit, push, pull request.
 
-* Rick Waldron [@rwaldron](http://twitter.com/rwaldron), [github](https://github.com/rwldrn)
+* Rick Waldron [@rwaldron](http://twitter.com/rwaldron), [github](https://github.com/rwaldron)
 * Mathias Bynens [@mathias](http://twitter.com/mathias), [github](https://github.com/mathiasbynens)
 * Schalk Neethling [@ossreleasefeed](http://twitter.com/ossreleasefeed), [github](https://github.com/ossreleasefeed/)
 * Kit Cambridge  [@kitcambridge](http://twitter.com/kitcambridge), [github](https://github.com/kitcambridge)
@@ -26,6 +26,9 @@
 * Miloš Gavrilović [@gavrisimo](http://twitter.com/gavrisimo), [github](https://github.com/gavrisimo)
 * Duc Nguyen [@ducntq](https://twitter.com/ducntq), [github](https://github.com/ducntq)
 * James Young [@jamsyoung](http://twitter.com/jamsyoung), [github](https://github.com/jamsyoung)
+* Stephane Moreau [github](https://github.com/stmoreau) 
+* Boris Nekezov [github](https://github.com/boris-nekezov)
+* Akshat Joshi [@akshat_joshi](http://twitter.com/akshat_joshi), [github](https://https://github.com/akshatjoshii) 
 
 
 ## Tot codul dintr-o aplicație trebuie să arate ca și cum ar fi fost scris de o singură persoană, indiferent de câți oameni au contribuit la scrierea lui.
@@ -47,6 +50,7 @@
 ## Traduceri
 
 * [ORIGINAL](https://github.com/rwldrn/idiomatic.js/)
+* [Bulgarian](https://github.com/rwldrn/idiomatic.js/tree/master/translations/bg_BG)
 * [German](https://github.com/rwldrn/idiomatic.js/tree/master/translations/de_DE)
 * [French](https://github.com/rwldrn/idiomatic.js/tree/master/translations/fr_FR)
 * [Spanish](https://github.com/rwldrn/idiomatic.js/tree/master/translations/es_ES)
@@ -59,6 +63,8 @@
 * [简体中文](https://github.com/rwldrn/idiomatic.js/tree/master/translations/zh_CN)
 * [Serbian - cyrilic alphabet](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ср_СР)
 * [Serbian - latin aplphabet](https://github.com/rwldrn/idiomatic.js/tree/master/translations/sr_SR)
+* [Greek](https://github.com/rwaldron/idiomatic.js/tree/master/translations/gr_GR)
+* [Hindi](https://github.com/rwaldron/idiomatic.js/tree/master/translations/hi_HI) 
 
 
 ## Conținut Important și Non-Idiomatic:
@@ -1223,9 +1229,7 @@ Următoarele secțiuni subliniază un ghid de stilizare _rezonabil_ pentru dezvo
 
     #### “Everything is Permitted: Extending Built-ins” de Andrew Dupont (JSConf2011, Portland, Oregon)
 
-    <iframe src="http://blip.tv/play/g_Mngr6LegI.html" width="480" height="346" frameborder="0" allowfullscreen></iframe><embed type="application/x-shockwave-flash" src="http://a.blip.tv/api.swf#g_Mngr6LegI" style="display:none"></embed>
-
-    http://blip.tv/jsconf/jsconf2011-andrew-dupont-everything-is-permitted-extending-built-ins-5211542
+    https://www.youtube.com/watch?v=xL3xCO7CLNM
 
 
 9. <a name="comments">Comentarii</a>

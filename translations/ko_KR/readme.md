@@ -2,7 +2,7 @@
 
 ## 이 문서는 계속 바뀝니다. 주변의 코드를 더 낫게 만들기 위한 좋은 아이디어가 있으시면 알려주세요. Github에서 fork, clone, branch, commit, push, pull request 하는 방법으로 참여해 보세요.
 
-* Rick Waldron [@rwaldron](http://twitter.com/rwaldron), [github](https://github.com/rwldrn)
+* Rick Waldron [@rwaldron](http://twitter.com/rwaldron), [github](https://github.com/rwaldron)
 * Mathias Bynens [@mathias](http://twitter.com/mathias), [github](https://github.com/mathiasbynens)
 * Schalk Neethling [@ossreleasefeed](http://twitter.com/ossreleasefeed), [github](https://github.com/ossreleasefeed/)
 * Kit Cambridge  [@kitcambridge](http://twitter.com/kitcambridge), [github](https://github.com/kitcambridge)
@@ -25,6 +25,9 @@
 * Miloš Gavrilović [@gavrisimo](http://twitter.com/gavrisimo), [github](https://github.com/gavrisimo)
 * Duc Nguyen [@ducntq](https://twitter.com/ducntq), [github](https://github.com/ducntq)
 * James Young [@jamsyoung](http://twitter.com/jamsyoung), [github](https://github.com/jamsyoung)
+* Stephane Moreau [github](https://github.com/stmoreau)  
+* Boris Nekezov [github](https://github.com/boris-nekezov)
+* Akshat Joshi [@akshat_joshi](http://twitter.com/akshat_joshi), [github](https://https://github.com/akshatjoshii)  
 
 ## 코드 기반에 있는 모든 코드는 마치 한 사람이 작성한 것처럼 보여야 합니다. 많은 사람이 코드 작성에 참여했더라도 말이죠.
 
@@ -33,7 +36,6 @@
 ### 다른 사람들에게 제 코드 작성 스타일을 따르라고 강요하려는 의도는 아닙니다. 이미 준수하는 코드작성 스타일이 있다면, 그것을 따라야 하겠지요.
 
 
-<!--> ### "Arguments over style are pointless. There should be a style guide, and you should follow it"-->
 > ### "스타일에 관한 논쟁은 무의미하다. 스타일 가이드가 있을테니, 거기에 따르기만 해라"
 >_Rebecca_ _Murphey_
 
@@ -46,6 +48,7 @@
 ## 번역
 
 * [ORIGINAL](https://github.com/rwldrn/idiomatic.js/)
+* [Bulgarian](https://github.com/rwldrn/idiomatic.js/tree/master/translations/bg_BG)
 * [German](https://github.com/rwldrn/idiomatic.js/tree/master/translations/de_DE)
 * [French](https://github.com/rwldrn/idiomatic.js/tree/master/translations/fr_FR)
 * [Spanish](https://github.com/rwldrn/idiomatic.js/tree/master/translations/es_ES)
@@ -58,6 +61,8 @@
 * [简体中文](https://github.com/rwldrn/idiomatic.js/tree/master/translations/zh_CN)
 * [Serbian - cyrilic alphabet](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ср_СР)
 * [Serbian - latin aplphabet](https://github.com/rwldrn/idiomatic.js/tree/master/translations/sr_SR)
+* [Greek](https://github.com/rwaldron/idiomatic.js/tree/master/translations/gr_GR)
+* [Hindi](https://github.com/rwaldron/idiomatic.js/tree/master/translations/hi_HI)  
 
 ## 관련은 없지만, 중요한 자료:
 
@@ -1218,9 +1223,7 @@
 
     #### “Everything is Permitted: Extending Built-ins(모든 게 다 가능해진, 내장기능 확장)” by Andrew Dupont (JSConf2011, Portland, Oregon)
 
-    <iframe src="http://blip.tv/play/g_Mngr6LegI.html" width="480" height="346" frameborder="0" allowfullscreen></iframe><embed type="application/x-shockwave-flash" src="http://a.blip.tv/api.swf#g_Mngr6LegI" style="display:none"></embed>
-
-    http://blip.tv/jsconf/jsconf2011-andrew-dupont-everything-is-permitted-extending-built-ins-5211542
+    https://www.youtube.com/watch?v=xL3xCO7CLNM
 
 9. <a name="comments">주석 달기</a>
   * JSDoc 스타일이 좋아요 (Closure Compiler type hints++)

@@ -3,7 +3,7 @@
 
 ## Questo è un documento in continua evoluzione e nuove idee sono sempre bene accette. Per contribuire: fork, clone, branch, commit, push, pull request.
 
-* Rick Waldron [@rwaldron](http://twitter.com/rwaldron), [github](https://github.com/rwldrn)
+* Rick Waldron [@rwaldron](http://twitter.com/rwaldron), [github](https://github.com/rwaldron)
 * Mathias Bynens [@mathias](http://twitter.com/mathias), [github](https://github.com/mathiasbynens)
 * Schalk Neethling [@ossreleasefeed](http://twitter.com/ossreleasefeed), [github](https://github.com/ossreleasefeed/)
 * Kit Cambridge  [@kitcambridge](http://twitter.com/kitcambridge), [github](https://github.com/kitcambridge)
@@ -31,6 +31,9 @@
 * Yotam Ofek [@yotamofek](https://twitter.com/yotamofek) [github](https://github.com/yotamofek)
 * Duc Nguyen [@ducntq](https://twitter.com/ducntq), [github](https://github.com/ducntq)
 * James Young [@jamsyoung](http://twitter.com/jamsyoung), [github](https://github.com/jamsyoung)
+* Stephane Moreau [github](https://github.com/stmoreau)  
+* Boris Nekezov [github](https://github.com/boris-nekezov)
+* Akshat Joshi [@akshat_joshi](http://twitter.com/akshat_joshi), [github](https://https://github.com/akshatjoshii)  
 
 
 ## Tutto il codice, in qualsiasi linguaggio sia, dovrebbe sembrare come scritto da un'unica persona, non importa quante persone vi abbiano contribuito.
@@ -52,6 +55,7 @@
 ## Traduzioni
 
 * [ORIGINAL](https://github.com/rwldrn/idiomatic.js/)
+* [Bulgarian](https://github.com/rwldrn/idiomatic.js/tree/master/translations/bg_BG)
 * [German](https://github.com/rwldrn/idiomatic.js/tree/master/translations/de_DE)
 * [French](https://github.com/rwldrn/idiomatic.js/tree/master/translations/fr_FR)
 * [Spanish](https://github.com/rwldrn/idiomatic.js/tree/master/translations/es_ES)
@@ -64,6 +68,8 @@
 * [简体中文](https://github.com/rwldrn/idiomatic.js/tree/master/translations/zh_CN)
 * [Serbian - cyrilic alphabet](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ср_СР)
 * [Serbian - latin aplphabet](https://github.com/rwldrn/idiomatic.js/tree/master/translations/sr_SR)
+* [Greek](https://github.com/rwaldron/idiomatic.js/tree/master/translations/gr_GR)
+* [Hindi](https://github.com/rwaldron/idiomatic.js/tree/master/translations/hi_HI)
 
 
 ## Cose importanti, non idiomatiche:
@@ -78,6 +84,7 @@
  * [JavaScript Lint (JSL)](http://javascriptlint.com/)
  * [jshint](http://jshint.com/)
  * [jslint](http://jslint.org/)
+ * [jscs](https://www.npmjs.org/package/jscs)
  * [Editorconfig](http://editorconfig.org/)
 
 ### Impara
@@ -94,7 +101,6 @@ I seguenti dovrebbero essere considerati come 1) incompleti e 2) *LETTURE NECESS
  * [Perfection Kills](http://perfectionkills.com/)
  * [Douglas Crockford's Wrrrld Wide Web](http://www.crockford.com)
  * [JS Assessment](https://github.com/rmurphey/js-assessment)
- * [Leveraging Code Quality Tools by Anton Kovalyov](http://anton.kovalyov.net/slides/gothamjs/)
 
 
 
@@ -151,12 +157,13 @@ Le seguenti sezioni evidenziano una _ragionevole_ guida di stile per il moderno 
 1. <a name="whitespace">Spazio vuoto</a>
   - Mai mischiare spazi e tabulazioni.
   - Quando iniziate un progetto, prima di cominciare a scrivere il codice, scegliete tra indentazione soft (spazi) o tabulazioni reali, e considerate questa scelta **legge**.
-      - Per la leggibilità, raccomando sempre di impostare la dimensione di indentamento del proprio editor a due caratteri &mdash; questo significa, due spazi o due spazi rappresentanti una tabulazione reale.
+      - Per la leggibilità, raccomando sempre di impostare la dimensione dei rientri del proprio editor a due caratteri &mdash; questo significa, due spazi o due spazi rappresentanti una tabulazione reale.
   - Se il vostro editor lo supporta, lavorate sempre con l'impostazione "mostra caratteri invisibili" attiva. I benefici di questa pratica sono:
       - Rafforzata consistenza
       - Eliminazione di spazi vuoti alla fine delle linee
       - Eliminazione di linee vuote
       - Commit e diff più facili da leggere
+  - Usate [Editorconfig](http://editorconfig.org/) quando possibile. Supporta la maggior parte degli IDE e gestisce la maggior parte delle impostazioni per gli spazi vuoti.
 
 
 2. <a name="spacing">Bella sintassi</a>
@@ -280,6 +287,27 @@ Le seguenti sezioni evidenziano una _ragionevole_ guida di stile per il moderno 
         qux;
 
       // tutto il codice dopo le dichiarazioni delle variabili.
+    }
+
+    // 2.B.1.4
+    // const e let, da ECMAScript 6, dovrebbero essere posizionate all'inizio del loro scope (blocco).
+
+    // Sbagliato
+    function foo() {
+        let foo,
+        bar;
+        if ( condition ) {
+            bar = "";
+            // istruzioni
+        }
+    }
+    // Corretto
+    function foo() {
+        let foo;
+        if ( condition ) {
+            let bar = "";
+            // istruzioni
+        }
     }
     ```
 
@@ -969,6 +997,7 @@ Le seguenti sezioni evidenziano una _ragionevole_ guida di stile per il moderno 
         // Aggiorna il valore corrente di questa istanza
         // con il più recente valore recuperato dal
         // flusso di dati
+        this.value = data;
 
       }.bind(this) );
 
@@ -1103,7 +1132,7 @@ Le seguenti sezioni evidenziano una _ragionevole_ guida di stile per il moderno 
 
     ```
 
-    `thisArg` può essere usato con `Array.prototype.every`, `Array.prototype.forEach`, `Array.prototype.some`, `Array.prototype.filter`
+    `thisArg` può essere usato con `Array.prototype.every`, `Array.prototype.forEach`, `Array.prototype.some`, `Array.prototype.map`, `Array.prototype.filter`
 
 7. <a name="misc">Varie</a>
 
@@ -1258,9 +1287,7 @@ Le seguenti sezioni evidenziano una _ragionevole_ guida di stile per il moderno 
 
     #### “Everything is Permitted: Extending Built-ins” di Andrew Dupont (JSConf2011, Portland, Oregon)
 
-    <iframe src="http://blip.tv/play/g_Mngr6LegI.html" width="480" height="346" frameborder="0" allowfullscreen></iframe><embed type="application/x-shockwave-flash" src="http://a.blip.tv/api.swf#g_Mngr6LegI" style="display:none"></embed>
-
-    http://blip.tv/jsconf/jsconf2011-andrew-dupont-everything-is-permitted-extending-built-ins-5211542
+    https://www.youtube.com/watch?v=xL3xCO7CLNM
 
 
 9. <a name="comments">Commenti</a>

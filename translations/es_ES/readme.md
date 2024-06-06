@@ -1,9 +1,9 @@
 # Principios para escribir JavaScript consistente e idiomático
 
 
-## Este es un documento vivo, y nuevas ideas para mejorar el código que nos rodea son siempre bienvenidas. Contribuye: forkea, clona, branchea, commitea, pushea y haz alguna pull request. 
+## Este es un documento vivo, y nuevas ideas para mejorar el código que nos rodea son siempre bienvenidas. Contribuye: forkea, clona, branchea, commitea, pushea y haz alguna pull request.
 
-* Rick Waldron [@rwaldron](http://twitter.com/rwaldron), [github](https://github.com/rwldrn)
+* Rick Waldron [@rwaldron](http://twitter.com/rwaldron), [github](https://github.com/rwaldron)
 * Mathias Bynens [@mathias](http://twitter.com/mathias), [github](https://github.com/mathiasbynens)
 * Schalk Neethling [@ossreleasefeed](http://twitter.com/ossreleasefeed), [github](https://github.com/ossreleasefeed/)
 * Kit Cambridge  [@kitcambridge](http://twitter.com/kitcambridge), [github](https://github.com/kitcambridge)
@@ -31,7 +31,9 @@
 * Yotam Ofek [@yotamofek](https://twitter.com/yotamofek) [github](https://github.com/yotamofek)
 * Duc Nguyen [@ducntq](https://twitter.com/ducntq), [github](https://github.com/ducntq)
 * James Young [@jamsyoung](http://twitter.com/jamsyoung), [github](https://github.com/jamsyoung)
-
+* Stephane Moreau [github](https://github.com/stmoreau)  
+* Boris Nekezov [github](https://github.com/boris-nekezov)  
+* Akshat Joshi [@akshat_joshi](http://twitter.com/akshat_joshi), [github](https://https://github.com/akshatjoshii)
 
 
 ## Todo el código en cualquier proyecto debería verse como si una sola persona lo hubiera escrito, sin importar cuánta gente haya contribuído.
@@ -52,6 +54,8 @@
 
 ## Traducciones
 
+* [ORIGINAL](https://github.com/rwldrn/idiomatic.js/)
+* [Bulgarian](https://github.com/rwldrn/idiomatic.js/tree/master/translations/bg_BG)
 * [German](https://github.com/rwldrn/idiomatic.js/tree/master/translations/de_DE)
 * [French](https://github.com/rwldrn/idiomatic.js/tree/master/translations/fr_FR)
 * [Spanish](https://github.com/rwldrn/idiomatic.js/tree/master/translations/es_ES)
@@ -64,6 +68,8 @@
 * [简体中文](https://github.com/rwldrn/idiomatic.js/tree/master/translations/zh_CN)
 * [Serbian - cyrilic alphabet](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ср_СР)
 * [Serbian - latin aplphabet](https://github.com/rwldrn/idiomatic.js/tree/master/translations/sr_SR)
+* [Greek](https://github.com/rwaldron/idiomatic.js/tree/master/translations/gr_GR)  
+* [Hindi](https://github.com/rwaldron/idiomatic.js/tree/master/translations/hi_HI) 
 
 
 ## Cosas importantes, no relacionadas directamente con el JS idiomático:
@@ -104,12 +110,11 @@ Los proyectos deberían tratar de incluir siempre algún mecanismo para que el c
 
 
 
-
 ### Testing
 
-Los proyectos _deben_ incluir alguna forma de testing (test unitario, test funcional, etc). Las demos NO CUENTAN como "tests". A continuación, una lista de frameworks para testing, ninguno de los cuales recomiendo más que otro.
+Los proyectos _deben_ incluir alguna forma de prueba (test unitario, test funcional, etc). Las demos NO CUENTAN como "tests". A continuación, una lista de frameworks para testing, ninguno de los cuales recomiendo más que otro.
 
- * [QUnit](http://github.com/jquery/qunit)
+ * [QUnit](https://github.com/jquery/qunit)
  * [Jasmine](https://github.com/pivotal/jasmine)
  * [Vows](https://github.com/cloudhead/vows)
  * [Mocha](https://github.com/visionmedia/mocha)
@@ -122,7 +127,7 @@ Los proyectos _deben_ incluir alguna forma de testing (test unitario, test funci
 
  * [Espacios en blanco](#whitespace)
  * [Beautiful Syntax](#spacing)
- * [Checkeo de tipos (Cortesía de la guía de estilo de jQuery)](#type)
+ * [Comprobación de tipos (Cortesía de la guía de estilo de jQuery)](#type)
  * [Evaluación condicional](#cond)
  * [Estilo práctico](#practical)
  * [Naming](#naming)
@@ -138,7 +143,7 @@ Los proyectos _deben_ incluir alguna forma de testing (test unitario, test funci
 
 ## Prólogo
 
-Las siguientes secciones delinean una guía de estilos _razonable_ para desarrollo moderno de JavaScript, y no intentan ser prescriptivas. Lo más importante es la **ley de consistencia de estilo de código**. Cualquiera sea el estilo que escojas para tu proyecto debería ser considerado ley. Piensa en este documento como una declaración del compromiso para con la consistencia de estilo, legibilidad y mantenibilidad.
+Las siguientes secciones delinean una guía de estilos _razonable_ para un desarrollo moderno de JavaScript, y no intentan ser prescriptivas. Lo más importante es la **ley de consistencia de estilo de código**. Cualquiera sea el estilo que escojas para tu proyecto debería ser considerado ley. Piensa en este documento como una declaración del compromiso para con la consistencia de estilo, legibilidad y mantenibilidad.
 
 
 
@@ -262,7 +267,7 @@ Las siguientes secciones delinean una guía de estilos _razonable_ para desarrol
 
     // 2.B.1.3
     // sentencias `var` deberían estar siempre al principio de su respectivo scope (alcance), que sería la función.
-    
+
 
     // Mal
     function foo() {
@@ -280,10 +285,10 @@ Las siguientes secciones delinean una guía de estilos _razonable_ para desarrol
 
       // todas las sentencias luego de la declaración de variables.
     }
-    
+
     // 2.B.1.4
     // const y let, de ECMAScript 6, de la misma manera deberían aparecer al principio de su scope (alcance), que sería el bloque.
-    
+
     // Mal
     function foo() {
       let foo,
@@ -343,7 +348,7 @@ Las siguientes secciones delinean una guía de estilos _razonable_ para desarrol
 
     // Expresión de función con identificador
     // Esta forma es preferida porque tiene el valor agregado de
-    // poder ser llamada a sí misma y ser identificable en el stacktrace (MUY útil para debugging) :
+    // poder ser llamada a sí misma y ser identificable en el seguimiento de la pila (MUY útil para debugging):
     var factorial = function factorial( number ) {
         if ( number < 2 ) {
             return 1;
@@ -374,9 +379,9 @@ Las siguientes secciones delinean una guía de estilos _razonable_ para desarrol
     ```javascript
 
     // 2.C.1.1
-    // Funciones con callbacls
+    // Funciones con callbacks
     foo(function() {
-        // Como se ve no hay espacio entre el primer paréntesis
+        // Como se ve, no hay espacio entre el primer paréntesis
         // y la palabra "function"
     });
 
@@ -403,7 +408,7 @@ Las siguientes secciones delinean una guía de estilos _razonable_ para desarrol
     D. La consistencia siempre gana
 
     En las secciones 2.A-2.C, las reglas para los espacios son puestas con un objetivo más simple y con un propósito más general: consistencia.
-    Es importante destacar que algunas preferencias de formato, deberían ser consideradas opcionales, pero solo un estilo debería existir a través de todo el código de fuente de tu proyecto.
+    Es importante destacar que algunas preferencias de formato, deberían ser consideradas opcionales, pero solo un estilo debería existir a través de todo el código fuente de tu proyecto.
 
     ```javascript
 
@@ -431,13 +436,13 @@ Las siguientes secciones delinean una guía de estilos _razonable_ para desarrol
 
     E. Comillas
 
-    Si prefieres comillas simples o dobles no debería importar, no hay diferencias en como JavaScript las parsea. Lo que **ABSOLUTAMENTE DEBE** ser cumplido es la consistencia. **Nunca mezclar comillas en el mismo proyecto. Elegir un estilo y cumplirlo.**
+    Si prefieres comillas simples o dobles no debería importar, no hay diferencias ya que JavaScript las parsea. Lo que **ABSOLUTAMENTE DEBE** ser cumplido es la consistencia. **Nunca mezclar comillas en el mismo proyecto. Elegir un estilo y cumplirlo a rajatabla.**
 
     F. Fin de línea y líneas vacías
 
     Espacios en blanco pueden arruinar diffs y hacer los cambios imposibles de leer. Considera agregar algún mecanismo para remover automáticamente los espacios que se encuentran al final de la línea o en líneas vacías.
 
-3. <a name="type">Checkeo de tipos (Cortesía de la guía de estilo de jQuery)</a>
+3. <a name="type">Verificación de tipos (Cortesía de la guía de estilo de jQuery)</a>
 
     A. Tipos
 
@@ -460,7 +465,7 @@ Las siguientes secciones delinean una guía de estilos _razonable_ para desarrol
     Array:
 
         Array.isArray( arrayLikeObject )
-        (cuando sea posible / hay implementaciónes que no tienen esta función)
+        (cuando sea posible / hay implementaciones que no tienen esta función)
 
     Node:
 
@@ -515,12 +520,12 @@ Las siguientes secciones delinean una guía de estilos _razonable_ para desarrol
     ...
 
     // En algún lugar, más tarde en tu código, necesitas modificar `foo`
-    // con un nuevo valor derivado de el elemento input del HTML
+    // con un nuevo valor derivado del elemento input del HTML
 
     foo = document.getElementById("foo-input").value;
 
     // Si vas a testear `typeof foo` ahora, el resultado sería `string`
-    // Esto significa que si hubieras tenido lógica que comparara `foo` así:
+    // Esto significa que si hubieras tenido lógica que comparar `foo` así:
 
     if ( foo === 1 ) {
 
@@ -533,7 +538,7 @@ Las siguientes secciones delinean una guía de estilos _razonable_ para desarrol
 
     // 3.B.1.2
 
-    // Te le podés adelantar a los problemas, usando conversión de tipos con los operadores unarios + o - :
+    // Te puedes adelantar a los problemas, usando conversión de tipos con los operadores unarios + o - :
 
     foo = +document.getElementById("foo-input").value;
     //      ^ el operador unario + va a convertir su operando derecho a number
@@ -637,7 +642,7 @@ Las siguientes secciones delinean una guía de estilos _razonable_ para desarrol
     // false
 
     // Nótese que el ejemplo anterior debería ser considerado "innecesariamente inteligente"
-    // Prefiérase el approach obvio de comparar el valor retornado de 
+    // Prefiérase el método obvio de comparar el valor retornado de
     // indexOf, como en:
 
     if ( array.indexOf( "a" ) >= 0 ) {
@@ -664,7 +669,7 @@ Las siguientes secciones delinean una guía de estilos _razonable_ para desarrol
     // Todos resultan en 2
 
 
-    // Tener en cuenta que números negativos serán tratados de otra manera...
+    // Tener en cuenta que los números negativos serán tratados de otra manera...
 
     var neg = -2.5;
 
@@ -753,26 +758,26 @@ Las siguientes secciones delinean una guía de estilos _razonable_ para desarrol
 
 
     // 4.1.7
-    // Cuando solamente se esta evaluando una referencia que puede ser null o undefined, pero NO false, "" or 0,
+    // Cuando solamente se está evaluando una referencia que puede ser null o undefined, pero NO false, "" or 0,
     // en lugar de:
     if ( foo === null || foo === undefined ) ...
 
     // ...tomar ventaja del uso del operador ==:
     if ( foo == null ) ...
 
-    // Recuerda, usar == va a matchear `null` con AMBOS `null` y `undefined`
+    // Recuerda, usar == va a comparar `null` con AMBOS `null` y `undefined`
     // pero no `false`, "" o 0
     null == undefined
 
     ```
-    SIEMPRE evaluar por el mejor, más preciso resultado - lo de arriba es sólo una guía, no un dogma.
+    SIEMPRE evaluar por el mejor, por el resultado más preciso - lo de arriba es sólo una guía, no un dogma.
 
     ```javascript
 
     // 4.2.1
     // Sobre los tipos y evaluación de expresiones
 
-    Preferir `===` por sobre `==` (a menos que el caso particular requiera una evaluación no fuertemente tipada)
+    Preferir `===` sobre `==` (a menos que el caso particular requiera una evaluación no fuertemente tipada)
 
     === no genera coerción de tipos, lo que significa que:
 
@@ -788,13 +793,13 @@ Las siguientes secciones delinean una guía de estilos _razonable_ para desarrol
     // 4.2.2
     // Booleanos, Verdaderos y Falsos
 
-    //Booleanos: 
+    //Booleanos:
     true, false
 
-    //Verdaderos: 
+    //Verdaderos:
     "foo", 1
 
-    //Falsos: 
+    //Falsos:
     "", 0, null, undefined, NaN, void 0
 
     ```
@@ -815,7 +820,7 @@ Las siguientes secciones delinean una guía de estilos _razonable_ para desarrol
             return {
                 // Esta es una propiedad booleana
                 bool: true,
-                // Algun valor string
+                // Algún valor string
                 string: "a string",
                 // Una propiedad Array
                 array: [ 1, 2, 3, 4 ],
@@ -885,7 +890,7 @@ Las siguientes secciones delinean una guía de estilos _razonable_ para desarrol
 
 
 
-    Si no eres un compilador/compresor humano de código, no te esfuerces por de serlo.
+    Si no eres un compilador/compresor humano de código, no te esfuerces por serlo.
 
     A continuación ejemplos "tristes" de nombramiento de variables
 
@@ -971,7 +976,7 @@ Las siguientes secciones delinean una guía de estilos _razonable_ para desarrol
 
     ```
 
-B. Caras de `this`
+    B. Caras de `this`
 
     Mas allá de los generalmente bien conocidos casos de uso de `call` y `apply`, siempre preferir `.bind( this )` o equivalente, para crear definiciones de `BoundFunction` para invocar más tarde. Sólo recurrir a alias cuando no hay disponible una opción preferible.
 
@@ -987,13 +992,13 @@ B. Caras de `this`
       stream.read( opts.path, function( data ) {
 
         // Actualizar el valor de la instancia
-        // con el valor mas reciente del
+        // con el valor más reciente del
         // data stream
         this.value = data;
 
       }.bind(this) );
 
-      // Regular la frecueancia de eventos emitidos de
+      // Regular la frecuencia de eventos emitidos de
       // esta instancia de Device
       setInterval(function() {
 
@@ -1128,7 +1133,7 @@ B. Caras de `this`
 
 7. <a name="misc">Varios</a>
 
-    Esta sección servirá para describir ideas y conceptos que no deberían se considerados dogmas, pero existen para alentar a cuestionarse prácticas, en un intento para encontrar mejores maneras de llevar a cabo tareas comunes de programación en JavaScript.
+    Esta sección servirá para describir ideas y conceptos que no deberían ser considerados dogmas, pero existen para alentar a cuestionarse prácticas, en un intento para encontrar mejores maneras de llevar a cabo tareas comunes de programación en JavaScript.
 
     A. El uso de `switch` debería ser evitado, ya que los métodos modernos de tracing marcarán como negativas las funciones que contengan sentencias `switch`.
 
@@ -1157,7 +1162,7 @@ B. Caras de `this`
 
     // 7.A.1.2
     // Una manera alternativa que soporta componibilidad y reusabilidad es
-    // usar un objeto para guardad "cases" y una función para delegar:
+    // usar un objeto para guardar "cases" y una función para delegar:
 
     var cases, delegator;
 
@@ -1279,9 +1284,7 @@ B. Caras de `this`
 
     #### “Everything is Permitted: Extending Built-ins” by Andrew Dupont (JSConf2011, Portland, Oregon) - recomendada!
 
-    <iframe src="http://blip.tv/play/g_Mngr6LegI.html" width="480" height="346" frameborder="0" allowfullscreen></iframe><embed type="application/x-shockwave-flash" src="http://a.blip.tv/api.swf#g_Mngr6LegI" style="display:none"></embed>
-
-    http://blip.tv/jsconf/jsconf2011-andrew-dupont-everything-is-permitted-extending-built-ins-5211542
+    [Andrew Dupont: Everything is Permitted: Extending Built-ins](https://www.youtube.com/watch?v=xL3xCO7CLNM)
 
 
 9. <a name="comments">Comentarios</a>
@@ -1300,11 +1303,11 @@ B. Caras de `this`
 
 ### Coma Primero.
 
-Cualquier proyecto que cite este documento como una guía para estilo no va a aceptar formateo de código con "coma primero", a menos que sea explícitamente específicado por el autor de ese proyecto.
+Cualquier proyecto que cite este documento como una guía para estilo no va a aceptar formateo de código con "coma primero", a menos que sea explícitamente especificado por el autor de ese proyecto.
 
 
 
 ----------
 
 
-<a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/3.0/80x15.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Principles of Writing Consistent, Idiomatic JavaScript</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/rwldrn/idiomatic.js" property="cc:attributionName" rel="cc:attributionURL">Rick Waldron and Contributors</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US">Creative Commons Attribution 3.0 Unported License</a>.<br />Based on a work at <a xmlns:dct="http://purl.org/dc/terms/" href="https://github.com/rwldrn/idiomatic.js" rel="dct:source">github.com/rwldrn/idiomatic.js</a>.
+<a rel="license" href="https://creativecommons.org/licenses/by/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/3.0/80x15.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Principles of Writing Consistent, Idiomatic JavaScript</span> by <a xmlns:cc="https://creativecommons.org/ns#" href="https://github.com/rwldrn/idiomatic.js" property="cc:attributionName" rel="cc:attributionURL">Rick Waldron and Contributors</a> is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/3.0/deed.en_US">Creative Commons Attribution 3.0 Unported License</a>.<br />Based on a work at <a xmlns:dct="http://purl.org/dc/terms/" href="https://github.com/rwldrn/idiomatic.js" rel="dct:source">github.com/rwldrn/idiomatic.js</a>.

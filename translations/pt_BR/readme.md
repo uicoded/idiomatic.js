@@ -2,7 +2,7 @@
 
 ## Este é um documento vivo e novas ideias para melhorar os códigos correspondentes são sempre bem vindas. Contribua: faça fork, clone, branch, commit, push, pull request.
 
-* Rick Waldron [@rwaldron](http://twitter.com/rwaldron), [github](https://github.com/rwldrn)
+* Rick Waldron [@rwaldron](http://twitter.com/rwaldron), [github](https://github.com/rwaldron)
 * Mathias Bynens [@mathias](http://twitter.com/mathias), [github](https://github.com/mathiasbynens)
 * Schalk Neethling [@ossreleasefeed](http://twitter.com/ossreleasefeed), [github](https://github.com/ossreleasefeed/)
 * Kit Cambridge  [@kitcambridge](http://twitter.com/kitcambridge), [github](https://github.com/kitcambridge)
@@ -25,6 +25,9 @@
 * Miloš Gavrilović [@gavrisimo](http://twitter.com/gavrisimo), [github](https://github.com/gavrisimo)
 * Duc Nguyen [@ducntq](https://twitter.com/ducntq), [github](https://github.com/ducntq)
 * James Young [@jamsyoung](http://twitter.com/jamsyoung), [github](https://github.com/jamsyoung)
+* Stephane Moreau [github](https://github.com/stmoreau)
+* Boris Nekezov [github](https://github.com/boris-nekezov)
+* Akshat Joshi [@akshat_joshi](http://twitter.com/akshat_joshi), [github](https://https://github.com/akshatjoshii)   
 
 
 ## Todo código em qualquer aplicação deve parecer como se tivesse sido escrito por uma única pessoa, independentemente de quantas pessoas tenham contribuído.
@@ -42,6 +45,7 @@
 ## Traduções
 
 * [ORIGINAL](https://github.com/rwldrn/idiomatic.js/)
+* [Bulgarian](https://github.com/rwldrn/idiomatic.js/tree/master/translations/bg_BG)
 * [German](https://github.com/rwldrn/idiomatic.js/tree/master/translations/de_DE)
 * [French](https://github.com/rwldrn/idiomatic.js/tree/master/translations/fr_FR)
 * [Spanish](https://github.com/rwldrn/idiomatic.js/tree/master/translations/es_ES)
@@ -54,6 +58,8 @@
 * [简体中文](https://github.com/rwldrn/idiomatic.js/tree/master/translations/zh_CN)
 * [Serbian - cyrilic alphabet](https://github.com/rwldrn/idiomatic.js/tree/master/translations/ср_СР)
 * [Serbian - latin aplphabet](https://github.com/rwldrn/idiomatic.js/tree/master/translations/sr_SR)
+* [Greek](https://github.com/rwaldron/idiomatic.js/tree/master/translations/gr_GR)
+* [Hindi](https://github.com/rwaldron/idiomatic.js/tree/master/translations/hi_HI)  
 
 
 ## Conteúdo importante e não idiomático:
@@ -127,7 +133,7 @@ Projetos _devem_ incluir alguma forma de teste unitário, de referência, de imp
 
 ## Prefácio
 
-As seções a seguir descrevem um guia de estilos razoável para desenvolvimento de JavaScript moderno e não pretendem serem obrigatórias. A conclusão mais importante é a **lei da consistência de estilo de código**. O que for escolhido como estilo para o seu projeto deverá ser considerado lei. Faça um link para este documento como uma regra do seu projeto sobre comprometimento de consistência, legibilidade e manutenção de estilo de código.
+As seções a seguir descrevem um guia de estilos razoável para desenvolvimento de JavaScript moderno e não pretendem ser obrigatórias. A conclusão mais importante é a **lei da consistência de estilo de código**. O que for escolhido como estilo para o seu projeto deverá ser considerado lei. Faça um link para este documento como uma regra do seu projeto sobre comprometimento de consistência, legibilidade e manutenção de estilo de código.
 
 
 
@@ -949,7 +955,7 @@ As seções a seguir descrevem um guia de estilos razoável para desenvolvimento
 
     B. Faces do `this`
 
-    Além dos mais conhecidos casos de uso do `call` e `apply`, sempre prefira `.bind( this )` ou um equivalente funcional, para criar definições `BoundFunction` que possam serem invocadas posteriormente. Somente recorra ao aliasing quando não houver disponível uma outra opção preferencial.
+    Além dos mais conhecidos casos de uso do `call` e `apply`, sempre prefira `.bind( this )` ou um equivalente funcional, para criar definições `BoundFunction` que possam ser invocadas posteriormente. Somente recorra ao aliasing quando não houver disponível uma outra opção preferencial.
 
     ```javascript
 
@@ -1258,9 +1264,7 @@ As seções a seguir descrevem um guia de estilos razoável para desenvolvimento
 
   #### “Everything is Permitted: Extending Built-ins” por Andrew Dupont (JSConf2011, Portland, Oregon)
 
-  <iframe src="http://blip.tv/play/g_Mngr6LegI.html" width="480" height="346" frameborder="0" allowfullscreen></iframe><embed type="application/x-shockwave-flash" src="http://a.blip.tv/api.swf#g_Mngr6LegI" style="display:none"></embed>
-
-  http://blip.tv/jsconf/jsconf2011-andrew-dupont-everything-is-permitted-extending-built-ins-5211542
+  https://www.youtube.com/watch?v=xL3xCO7CLNM
 
 
 9. <a name="comments">Comentários</a>
